@@ -2,13 +2,13 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import Logo from './Logo';
-import { Menu, X, CircleDot, LayoutDashboard, DollarSign, Sun, Moon } from 'lucide-react';
+import { Menu, X, CircleDot, LayoutDashboard, DollarSign, Sun, Moon, User, Briefcase, FolderOpen, MessageSquare } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { Switch } from '@/components/ui/switch';
 
 const Header = () => {
-  const [activePage, setActivePage] = useState('features');
+  const [activePage, setActivePage] = useState('inicio');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false); // Default to light mode
   
@@ -61,34 +61,54 @@ const Header = () => {
           <div className="rounded-full px-1 py-1 backdrop-blur-md bg-background/80 border border-border shadow-lg">
             <ToggleGroup type="single" value={activePage} onValueChange={(value) => value && setActivePage(value)}>
               <ToggleGroupItem 
-                value="features"
+                value="inicio"
                 className={cn(
                   "px-4 py-2 rounded-full transition-colors relative",
-                  activePage === 'features' ? 'text-accent-foreground bg-accent' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                  activePage === 'inicio' ? 'text-accent-foreground bg-accent' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 )}
-                onClick={handleNavClick('features')}
+                onClick={handleNavClick('inicio')}
               >
-                <CircleDot size={16} className="inline-block mr-1.5" /> Features
+                <CircleDot size={16} className="inline-block mr-1.5" /> Início
               </ToggleGroupItem>
               <ToggleGroupItem 
-                value="dashboard" 
+                value="sobre" 
                 className={cn(
                   "px-4 py-2 rounded-full transition-colors relative",
-                  activePage === 'dashboard' ? 'text-accent-foreground bg-accent' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                  activePage === 'sobre' ? 'text-accent-foreground bg-accent' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 )}
-                onClick={handleNavClick('dashboard')}
+                onClick={handleNavClick('sobre')}
               >
-                <LayoutDashboard size={16} className="inline-block mr-1.5" /> Dashboard
+                <User size={16} className="inline-block mr-1.5" /> Sobre
               </ToggleGroupItem>
               <ToggleGroupItem 
-                value="pricing" 
+                value="servicos" 
                 className={cn(
                   "px-4 py-2 rounded-full transition-colors relative",
-                  activePage === 'pricing' ? 'text-accent-foreground bg-accent' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                  activePage === 'servicos' ? 'text-accent-foreground bg-accent' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 )}
-                onClick={handleNavClick('pricing')}
+                onClick={handleNavClick('servicos')}
               >
-                <DollarSign size={16} className="inline-block mr-1.5" /> Pricing
+                <Briefcase size={16} className="inline-block mr-1.5" /> Serviços
+              </ToggleGroupItem>
+              <ToggleGroupItem 
+                value="projetos" 
+                className={cn(
+                  "px-4 py-2 rounded-full transition-colors relative",
+                  activePage === 'projetos' ? 'text-accent-foreground bg-accent' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                )}
+                onClick={handleNavClick('projetos')}
+              >
+                <FolderOpen size={16} className="inline-block mr-1.5" /> Projetos
+              </ToggleGroupItem>
+              <ToggleGroupItem 
+                value="depoimentos" 
+                className={cn(
+                  "px-4 py-2 rounded-full transition-colors relative",
+                  activePage === 'depoimentos' ? 'text-accent-foreground bg-accent' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                )}
+                onClick={handleNavClick('depoimentos')}
+              >
+                <MessageSquare size={16} className="inline-block mr-1.5" /> Depoimentos
               </ToggleGroupItem>
             </ToggleGroup>
           </div>
@@ -99,31 +119,49 @@ const Header = () => {
           <div className="md:hidden absolute top-20 left-4 right-4 bg-background/95 backdrop-blur-md py-4 px-6 border border-border rounded-2xl shadow-lg z-50">
             <div className="flex flex-col gap-4">
               <a 
-                href="#features" 
+                href="#inicio" 
                 className={`px-3 py-2 text-sm rounded-md transition-colors ${
-                  activePage === 'features' ? 'bg-accent text-accent-foreground' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                  activePage === 'inicio' ? 'bg-accent text-accent-foreground' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 }`}
-                onClick={handleNavClick('features')}
+                onClick={handleNavClick('inicio')}
               >
-                <CircleDot size={16} className="inline-block mr-1.5" /> Features
+                <CircleDot size={16} className="inline-block mr-1.5" /> Início
               </a>
               <a 
-                href="#dashboard" 
+                href="#sobre" 
                 className={`px-3 py-2 text-sm rounded-md transition-colors ${
-                  activePage === 'dashboard' ? 'bg-accent text-accent-foreground' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                  activePage === 'sobre' ? 'bg-accent text-accent-foreground' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 }`}
-                onClick={handleNavClick('dashboard')}
+                onClick={handleNavClick('sobre')}
               >
-                <LayoutDashboard size={16} className="inline-block mr-1.5" /> Dashboard
+                <User size={16} className="inline-block mr-1.5" /> Sobre
               </a>
               <a 
-                href="#pricing" 
+                href="#servicos" 
                 className={`px-3 py-2 text-sm rounded-md transition-colors ${
-                  activePage === 'pricing' ? 'bg-accent text-accent-foreground' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                  activePage === 'servicos' ? 'bg-accent text-accent-foreground' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 }`}
-                onClick={handleNavClick('pricing')}
+                onClick={handleNavClick('servicos')}
               >
-                <DollarSign size={16} className="inline-block mr-1.5" /> Pricing
+                <Briefcase size={16} className="inline-block mr-1.5" /> Serviços
+              </a>
+              <a 
+                href="#projetos" 
+                className={`px-3 py-2 text-sm rounded-md transition-colors ${
+                  activePage === 'projetos' ? 'bg-accent text-accent-foreground' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                }`}
+                onClick={handleNavClick('projetos')}
+              >
+                <FolderOpen size={16} className="inline-block mr-1.5" /> Projetos
+              </a>
+              <a 
+                href="#depoimentos" 
+                className={`px-3 py-2 text-sm rounded-md transition-colors ${
+                  activePage === 'depoimentos' ? 'bg-accent text-accent-foreground' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                }`}
+                onClick={handleNavClick('depoimentos')}
+              >
+                <MessageSquare size={16} className="inline-block mr-1.5" /> Depoimentos
               </a>
               
               {/* Add theme toggle for mobile */}
@@ -155,7 +193,7 @@ const Header = () => {
             <Sun size={18} className={`${!isDarkMode ? 'text-primary' : 'text-muted-foreground'}`} />
           </div>
           <div className="rounded-2xl">
-            <Button variant="ghost" className="text-muted-foreground hover:text-foreground hover:bg-muted">Log in</Button>
+            <Button variant="ghost" className="text-muted-foreground hover:text-foreground hover:bg-muted">Contato</Button>
           </div>
         </div>
       </header>
