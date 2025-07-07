@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -198,5 +198,25 @@
   
   .column-highlight {
     @apply bg-accent/20 transition-all duration-300;
+  }
+
+  /* Enhanced animations */
+  .text-shadow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+
+  .bg-300% {
+    background-size: 300% 300%;
+  }
+
+  /* Enhanced gradient shift animation */
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .animate-gradient-shift {
+    animation: gradient-shift 6s ease infinite;
   }
 }
