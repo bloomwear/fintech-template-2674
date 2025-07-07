@@ -18,11 +18,19 @@ const Index = () => {
         <div id="inicio">
           <HeroSection />
         </div>
-        <About />
-        <Services />
+        <div id="sobre">
+          <About />
+        </div>
+        <div id="servicos">
+          <Services />
+        </div>
         <Features />
-        <Projects />
-        <Testimonials />
+        <div id="projetos">
+          <Projects />
+        </div>
+        <div id="depoimentos">
+          <Testimonials />
+        </div>
         <Pricing />
       </main>
       <Footer />
