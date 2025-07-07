@@ -10,7 +10,7 @@ import { Switch } from '@/components/ui/switch';
 const Header = () => {
   const [activePage, setActivePage] = useState('inicio');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false); // Default to light mode
+  const [isDarkMode, setIsDarkMode] = useState(false);
   
   useEffect(() => {
     // Apply the theme to the document when it changes
@@ -22,13 +22,42 @@ const Header = () => {
       document.documentElement.classList.add('light-mode');
     }
   }, [isDarkMode]);
+
+  useEffect(() => {
+    // Update active page based on scroll position
+    const handleScroll = () => {
+      const sections = ['inicio', 'sobre', 'servicos', 'projetos', 'depoimentos'];
+      const scrollPosition = window.scrollY + 100; // Offset for header
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const offsetTop = element.offsetTop;
+          const offsetBottom = offsetTop + element.offsetHeight;
+
+          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+            setActivePage(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   
   const handleNavClick = (page: string) => (e: React.MouseEvent) => {
     e.preventDefault();
     setActivePage(page);
     const element = document.getElementById(page);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const headerHeight = 100; // Approximate header height
+      const elementPosition = element.offsetTop - headerHeight;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
     }
     setMobileMenuOpen(false);
   };
