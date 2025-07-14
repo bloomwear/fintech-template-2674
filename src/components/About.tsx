@@ -15,14 +15,13 @@ const About = () => {
             Sobre Nós
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
-            Transformando o futuro das
+            Transformando ideias em
             <span className="block bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              operações financeiras
+              experiências digitais incríveis
             </span>
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
-            Somos especialistas em soluções financeiras inovadoras, dedicados a revolucionar 
-            a forma como empresas gerenciam suas operações financeiras com tecnologia de ponta.
+            Somos especialistas em desenvolvimento web, dedicados a criar sites que não apenas impressionam visualmente, mas também geram resultados reais para seu negócio.
           </p>
         </div>
         
@@ -30,27 +29,27 @@ const About = () => {
           {[
             {
               icon: <User size={28} className="text-primary" />,
-              title: "10+ Anos",
+              title: "5+ Anos",
               subtitle: "Experiência",
-              description: "Mais de uma década desenvolvendo soluções fintech para empresas de todos os tamanhos."
+              description: "Mais de cinco anos criando sites modernos e funcionais para empresas de todos os segmentos."
             },
             {
               icon: <Award size={28} className="text-primary" />,
-              title: "Certificação",
-              subtitle: "Internacional",
-              description: "Padrões de segurança de nível bancário e certificações reconhecidas mundialmente."
+              title: "100+ Sites",
+              subtitle: "Entregues",
+              description: "Centenas de projetos concluídos com sucesso, sempre priorizando qualidade e satisfação do cliente."
             },
             {
               icon: <Target size={28} className="text-primary" />,
-              title: "Soluções",
-              subtitle: "Personalizadas",
-              description: "Cada projeto é único e desenvolvido para atender necessidades específicas do cliente."
+              title: "Design",
+              subtitle: "Responsivo",
+              description: "Todos os nossos sites são otimizados para funcionar perfeitamente em qualquer dispositivo."
             },
             {
               icon: <Heart size={28} className="text-primary" />,
               title: "Suporte",
-              subtitle: "Dedicado",
-              description: "Relacionamento duradouro com suporte 24/7 e acompanhamento contínuo."
+              subtitle: "Contínuo",
+              description: "Oferecemos suporte técnico e manutenção para garantir que seu site esteja sempre funcionando."
             }
           ].map((item, index) => (
             <div key={index} className="group">

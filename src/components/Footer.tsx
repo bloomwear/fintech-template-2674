@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="md:col-span-2 space-y-6">
             <Logo />
             <p className="text-muted-foreground max-w-xs">
-              Gestão de tarefas moderna para equipes que valorizam clareza, foco e resultados.
+              Desenvolvemos sites modernos e funcionais que transformam visitantes em clientes e geram resultados reais.
             </p>
             <div className="flex items-center gap-4">
               <a href="#" className="h-10 w-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors">
@@ -40,41 +40,41 @@ const Footer = () => {
           </div>
           
           <div className="space-y-4">
-            <h4 className="font-medium text-lg text-foreground">Produto</h4>
+            <h4 className="font-medium text-lg text-foreground">Serviços</h4>
             <ul className="space-y-3">
-              <li><a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Funcionalidades</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Integrações</a></li>
-              <li><a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">Preços</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Atualizações</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Roadmap</a></li>
+              <li><a href="#servicos" className="text-muted-foreground hover:text-foreground transition-colors">Sites Institucionais</a></li>
+              <li><a href="#servicos" className="text-muted-foreground hover:text-foreground transition-colors">E-commerce</a></li>
+              <li><a href="#servicos" className="text-muted-foreground hover:text-foreground transition-colors">Landing Pages</a></li>
+              <li><a href="#servicos" className="text-muted-foreground hover:text-foreground transition-colors">Sistemas Web</a></li>
+              <li><a href="#servicos" className="text-muted-foreground hover:text-foreground transition-colors">SEO & Performance</a></li>
             </ul>
           </div>
           
           <div className="space-y-4">
             <h4 className="font-medium text-lg text-foreground">Empresa</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Sobre</a></li>
+              <li><a href="#sobre" className="text-muted-foreground hover:text-foreground transition-colors">Sobre Nós</a></li>
+              <li><a href="#projetos" className="text-muted-foreground hover:text-foreground transition-colors">Portfólio</a></li>
+              <li><a href="#depoimentos" className="text-muted-foreground hover:text-foreground transition-colors">Depoimentos</a></li>
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Blog</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Carreiras</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Imprensa</a></li>
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Contato</a></li>
             </ul>
           </div>
           
           <div className="space-y-4">
-            <h4 className="font-medium text-lg text-foreground">Recursos</h4>
+            <h4 className="font-medium text-lg text-foreground">Suporte</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Documentação</a></li>
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Central de Ajuda</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Guias e Tutoriais</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Referência da API</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Comunidade</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Documentação</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Tutoriais</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">FAQ</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Suporte Técnico</a></li>
             </ul>
           </div>
         </div>
         
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center text-muted-foreground text-sm">
-          <div>© 2025 Cosmos Tasks. Todos os direitos reservados.</div>
+          <div>© 2025 WebDev Pro. Todos os direitos reservados.</div>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-foreground transition-colors">Privacidade</a>
             <a href="#" className="hover:text-foreground transition-colors">Termos</a>

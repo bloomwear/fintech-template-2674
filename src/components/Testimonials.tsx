@@ -5,44 +5,44 @@ import { Star, Quote, Users, TrendingUp, Shield } from 'lucide-react';
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "Nossa eficiência no processamento de pagamentos aumentou 40% e as falhas de transação caíram para quase zero. As funcionalidades de automação são revolucionárias.",
-      author: "Sarah Johnson",
-      position: "CFO na TechCorp",
-      company: "TechCorp",
+      quote: "Nosso novo site aumentou as vendas online em 300% nos primeiros três meses. O design é incrível e a funcionalidade é perfeita. Recomendo totalmente!",
+      author: "Marina Silva",
+      position: "CEO da Bella Moda",
+      company: "Bella Moda",
       avatar: "bg-gradient-to-br from-blue-500 to-purple-600",
       rating: 5,
-      metric: "40% mais eficiência"
+      metric: "300% mais vendas"
     },
     {
-      quote: "Os recursos de analytics em tempo real e detecção de fraude nos pouparam milhões. Conseguimos identificar problemas antes que se tornem críticos.",
-      author: "Michael Chen",
-      position: "Head de Riscos na FinanceFlow",
-      company: "FinanceFlow",
+      quote: "A equipe entendeu exatamente nossa visão e criou um site que superou nossas expectativas. O suporte é excepcional e sempre atendem rapidamente.",
+      author: "Carlos Mendes",
+      position: "Diretor de Marketing na TechSolutions",
+      company: "TechSolutions",
       avatar: "bg-gradient-to-br from-green-500 to-teal-600",
       rating: 5,
-      metric: "Milhões economizados"
+      metric: "Resultados excepcionais"
     },
     {
-      quote: "Compliance costumava ser um pesadelo. Agora nossos relatórios regulatórios são automatizados e estamos sempre prontos para auditorias.",
-      author: "Leila Rodriguez",
-      position: "Diretora de Operações na GlobalPay",
-      company: "GlobalPay",
+      quote: "Profissionais competentes que entregaram um trabalho de qualidade superior. Nosso site ficou moderno, rápido e está gerando muitos leads qualificados.",
+      author: "Ana Carolina",
+      position: "Fundadora da AC Consultoria",
+      company: "AC Consultoria",
       avatar: "bg-gradient-to-br from-orange-500 to-red-600",
       rating: 5,
-      metric: "100% compliance"
+      metric: "Leads qualificados"
     }
   ];
 
   const stats = [
     {
       icon: <Users size={24} className="text-primary" />,
-      value: "500+",
-      label: "Clientes Ativos"
+      value: "100+",
+      label: "Clientes Satisfeitos"
     },
     {
       icon: <TrendingUp size={24} className="text-primary" />,
-      value: "99.9%",
-      label: "Uptime Garantido"
+      value: "250%",
+      label: "Aumento Médio em Conversões"
     },
     {
       icon: <Shield size={24} className="text-primary" />,
@@ -67,14 +67,14 @@ const Testimonials = () => {
             Depoimentos
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
-            Confiança de equipes
+            O que nossos clientes
             <span className="block bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              financeiras globais
+              falam sobre nós
             </span>
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
-            Veja como nossa plataforma transforma operações financeiras para empresas 
-            ao redor do mundo e gera resultados excepcionais.
+            Veja como nossos sites transformaram negócios e geraram resultados 
+            excepcionais para empresários de diferentes segmentos.
           </p>
         </div>
 

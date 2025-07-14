@@ -5,43 +5,43 @@ import { ExternalLink, Github, Calendar, Users, TrendingUp, Globe, Award } from 
 const Projects = () => {
   const projects = [
     {
-      title: "PayFlow Enterprise",
-      description: "Plataforma completa de pagamentos para grandes corporações com processamento em tempo real, analytics avançados e sistema de gestão de riscos integrado.",
+      title: "E-commerce Premium",
+      description: "Loja virtual completa para empresa de moda com integração de pagamento, gestão de estoque e painel administrativo avançado.",
       image: "bg-gradient-to-br from-blue-500 via-blue-600 to-purple-700",
       stats: {
-        transactions: "1M+",
-        users: "50K+",
-        uptime: "99.9%"
+        vendas: "200%",
+        conversao: "8.5%",
+        usuarios: "15K+"
       },
-      technologies: ["React", "Node.js", "MongoDB", "AWS"],
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
       year: "2024",
-      category: "Enterprise Solution"
+      category: "E-commerce"
     },
     {
-      title: "FinTech Mobile App",
-      description: "Aplicativo móvel revolucionário para gestão financeira pessoal com integração bancária completa e IA para insights financeiros personalizados.",
+      title: "Portal Corporativo",
+      description: "Site institucional moderno para multinacional com área de clientes, blog integrado e sistema de newsletter automatizado.",
       image: "bg-gradient-to-br from-green-500 via-emerald-600 to-teal-700",
       stats: {
-        downloads: "100K+",
-        rating: "4.8",
-        countries: "15+"
+        pageviews: "50K/mês",
+        leads: "150%",
+        seo: "Top 3"
       },
-      technologies: ["React Native", "Python", "PostgreSQL", "GCP"],
-      year: "2023",
-      category: "Mobile App"
+      technologies: ["Next.js", "TypeScript", "Prisma", "Vercel"],
+      year: "2024",
+      category: "Institucional"
     },
     {
-      title: "Blockchain Payment Gateway",
-      description: "Gateway de pagamentos inovador baseado em blockchain para transações internacionais com taxas ultra baixas e segurança máxima.",
+      title: "Marketplace Local",
+      description: "Plataforma de marketplace para conectar produtores locais com consumidores, incluindo sistema de delivery integrado.",
       image: "bg-gradient-to-br from-orange-500 via-red-500 to-pink-600",
       stats: {
-        volume: "$10M+",
-        countries: "25+",
-        partners: "50+"
+        vendedores: "200+",
+        pedidos: "5K/mês",
+        rating: "4.9/5"
       },
-      technologies: ["Solidity", "Web3", "Next.js", "Docker"],
+      technologies: ["Vue.js", "Laravel", "MySQL", "PWA"],
       year: "2023",
-      category: "Blockchain Solution"
+      category: "Marketplace"
     }
   ];
 
@@ -57,14 +57,14 @@ const Projects = () => {
             Nossos Projetos
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
-            Casos de sucesso que
+            Projetos que
             <span className="block bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              transformaram negócios
+              geraram resultados reais
             </span>
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
-            Conheça alguns dos projetos que desenvolvemos para revolucionar operações financeiras 
-            e gerar resultados extraordinários para nossos clientes.
+            Conheça alguns dos sites que desenvolvemos e os resultados impressionantes 
+            que geramos para nossos clientes em diferentes segmentos de mercado.
           </p>
         </div>
         

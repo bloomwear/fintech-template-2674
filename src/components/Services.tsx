@@ -1,44 +1,44 @@
 
 import React from 'react';
-import { CreditCard, Shield, BarChart3, Settings, Globe, Zap, ArrowRight } from 'lucide-react';
+import { Globe, Smartphone, ShoppingCart, Settings, Search, Zap, ArrowRight } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
-      icon: <CreditCard size={28} className="text-primary" />,
-      title: "Processamento de Pagamentos",
-      description: "Soluções completas para processar pagamentos online e offline com segurança máxima e eficiência garantida.",
-      features: ["Tempo real", "Multi-moeda", "API robusta"]
+      icon: <Globe size={28} className="text-primary" />,
+      title: "Sites Institucionais",
+      description: "Sites elegantes e profissionais para apresentar sua empresa, produtos e serviços de forma impactante.",
+      features: ["Design responsivo", "SEO otimizado", "Carregamento rápido"]
     },
     {
-      icon: <Shield size={28} className="text-primary" />,
-      title: "Gestão de Riscos",
-      description: "Ferramentas avançadas de detecção de fraude e análise de risco para proteger completamente seu negócio.",
-      features: ["IA avançada", "Detecção 24/7", "Alertas instantâneos"]
+      icon: <ShoppingCart size={28} className="text-primary" />,
+      title: "E-commerce",
+      description: "Lojas virtuais completas com sistema de pagamento integrado e painel administrativo completo.",
+      features: ["Pagamentos online", "Gestão de estoque", "Relatórios de vendas"]
     },
     {
-      icon: <BarChart3 size={28} className="text-primary" />,
-      title: "Analytics Financeiro",
-      description: "Dashboards em tempo real e relatórios detalhados para tomada de decisões estratégicas inteligentes.",
-      features: ["Dashboard real-time", "Relatórios customizados", "Insights IA"]
+      icon: <Smartphone size={28} className="text-primary" />,
+      title: "Landing Pages",
+      description: "Páginas de conversão otimizadas para campanhas de marketing e geração de leads qualificados.",
+      features: ["Alta conversão", "Formulários inteligentes", "Analytics integrado"]
     },
     {
       icon: <Settings size={28} className="text-primary" />,
-      title: "Automação de Processos",
-      description: "Automatize reconciliações, aprovações e fluxos de trabalho financeiros mais complexos.",
-      features: ["Workflow inteligente", "Aprovações automáticas", "Integração total"]
+      title: "Sistemas Web",
+      description: "Desenvolvimento de sistemas personalizados para automatizar processos da sua empresa.",
+      features: ["Painel administrativo", "Integração com APIs", "Banco de dados seguro"]
     },
     {
-      icon: <Globe size={28} className="text-primary" />,
-      title: "Pagamentos Internacionais",
-      description: "Processe pagamentos em múltiplas moedas com taxas competitivas e conversão automática instantânea.",
-      features: ["150+ países", "Taxas baixas", "Conversão automática"]
+      icon: <Search size={28} className="text-primary" />,
+      title: "SEO & Performance",
+      description: "Otimização para mecanismos de busca e performance para garantir visibilidade online.",
+      features: ["Ranking no Google", "Velocidade otimizada", "Análise de concorrência"]
     },
     {
       icon: <Zap size={28} className="text-primary" />,
-      title: "Integração Rápida",
-      description: "APIs robustas e documentação completa para integração rápida com seus sistemas existentes.",
-      features: ["Setup em minutos", "Documentação completa", "SDKs múltiplos"]
+      title: "Manutenção",
+      description: "Serviços de manutenção, atualizações e suporte técnico para manter seu site sempre funcionando.",
+      features: ["Updates regulares", "Backup automático", "Suporte 24/7"]
     }
   ];
 
@@ -59,12 +59,12 @@ const Services = () => {
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
             Soluções completas para
             <span className="block bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              modernizar suas finanças
+              sua presença digital
             </span>
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
-            Oferecemos um ecossistema completo de ferramentas para transformar e otimizar 
-            todas as suas operações financeiras com tecnologia de última geração.
+            Oferecemos um ecossistema completo de serviços para criar e manter sua presença digital 
+            com as mais modernas tecnologias e melhores práticas do mercado.
           </p>
         </div>
         

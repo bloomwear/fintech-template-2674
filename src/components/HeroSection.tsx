@@ -29,30 +29,30 @@ const HeroSection = () => {
         <div className="flex justify-center">
           <span className="inline-flex items-center gap-2 px-3 py-1 text-xs font-medium rounded-full bg-muted text-primary">
             <span className="flex h-2 w-2 rounded-full bg-primary"></span>
-            Lançando novas funcionalidades de pagamento
+            Lançando novas tecnologias web
             <Loader className="h-3 w-3 animate-spin text-primary" />
           </span>
         </div>
         
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-medium tracking-tighter text-balance text-foreground">
-          Operações financeiras para empresas em <span className="text-primary">crescimento</span>
+          Desenvolvimento de sites para empresas em <span className="text-primary">crescimento</span>
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
-          Otimize seus fluxos de trabalho financeiros com nossa plataforma fintech abrangente. Desenvolvida para empresas modernas que valorizam eficiência, conformidade e crescimento escalável.
+          Criamos sites modernos e responsivos que convertem visitantes em clientes. Desenvolvido para empresas que valorizam design, performance e resultados.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6 items-center">
           <Button className="bg-primary text-primary-foreground hover:bg-primary/80 hover:text-primary-foreground text-base h-12 px-8 transition-all duration-200 min-h-[48px]">
-            Começar grátis
+            Solicitar orçamento
           </Button>
           <Button variant="outline" className="border-border text-foreground hover:bg-accent hover:text-accent-foreground text-base h-12 px-8 transition-all duration-200 min-h-[48px]">
-            Agendar demonstração
+            Ver nosso portfólio
           </Button>
         </div>
         
         <div className="pt-6 text-sm text-muted-foreground">
-          Sem cartão de crédito • Teste grátis por 14 dias
+          Orçamento gratuito • Projeto personalizado • Suporte incluído
         </div>
       </div>
       

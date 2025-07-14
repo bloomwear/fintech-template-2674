@@ -8,49 +8,49 @@ const Features = () => {
   
   const features = [
     {
-      title: "Payment Automation",
-      description: "Automate payment processing and reconciliation to reduce manual errors and improve efficiency.",
-      expandedDescription: "Set up automated payment workflows with custom approval chains. Schedule recurring payments, automate invoice processing, and create conditional rules for different transaction types. Reduce manual intervention and ensure compliance with financial regulations.",
+      title: "Design Responsivo",
+      description: "Sites que se adaptam perfeitamente a qualquer dispositivo, garantindo a melhor experiência do usuário.",
+      expandedDescription: "Criamos designs que funcionam fluidamente em desktop, tablet e mobile. Utilizamos as mais modernas técnicas de CSS Grid e Flexbox para garantir layouts flexíveis e adaptativos. Todos os elementos são testados em diferentes tamanhos de tela para uma experiência consistente.",
       icon: (
         <Layers size={24} className="text-cosmic-accent" />
       )
     },
     {
-      title: "Real-time Analytics",
-      description: "Monitor financial performance with real-time dashboards and comprehensive reporting.",
-      expandedDescription: "Track key financial metrics with customizable dashboards. Monitor cash flow, payment volumes, and transaction success rates in real-time. Generate detailed reports for stakeholders and identify trends before they impact your business.",
+      title: "Performance Otimizada",
+      description: "Sites rápidos e otimizados para SEO, garantindo melhor posicionamento nos mecanismos de busca.",
+      expandedDescription: "Implementamos técnicas avançadas de otimização como lazy loading, compressão de imagens, minificação de código e cache estratégico. Monitoramos métricas Core Web Vitals e garantimos tempos de carregamento inferiores a 3 segundos em qualquer conexão.",
       icon: (
         <Grid3x3 size={24} className="text-cosmic-accent" />
       )
     },
     {
-      title: "Risk Management",
-      description: "Advanced fraud detection and risk assessment tools to protect your business.",
-      expandedDescription: "Utilize machine learning algorithms to detect suspicious transactions and prevent fraud. Set up custom risk rules, monitor transaction patterns, and receive instant alerts for unusual activity. Protect your business with enterprise-grade security measures.",
+      title: "CMS Personalizado",
+      description: "Sistema de gerenciamento de conteúdo intuitivo para você atualizar seu site facilmente.",
+      expandedDescription: "Desenvolvemos painéis administrativos personalizados onde você pode gerenciar todo o conteúdo do seu site. Interface amigável para adicionar produtos, posts de blog, imagens e textos. Inclui sistema de usuários com diferentes níveis de permissão e backup automático.",
       icon: (
         <LayoutDashboard size={24} className="text-cosmic-accent" />
       )
     },
     {
-      title: "Compliance Tools",
-      description: "Built-in compliance features to meet regulatory requirements effortlessly.",
-      expandedDescription: "Stay compliant with financial regulations across multiple jurisdictions. Automated KYC/AML checks, transaction monitoring, and regulatory reporting. Generate audit trails and maintain documentation to meet compliance standards.",
+      title: "Integração com APIs",
+      description: "Conectamos seu site com sistemas externos como CRM, ERP e plataformas de pagamento.",
+      expandedDescription: "Integramos seu site com diversos serviços como WhatsApp Business, Google Analytics, Facebook Pixel, sistemas de email marketing e plataformas de pagamento. Criamos conexões seguras que automatizam processos e melhoram a eficiência do seu negócio.",
       icon: (
         <ListCheck size={24} className="text-cosmic-accent" />
       )
     },
     {
-      title: "Multi-currency Support",
-      description: "Process payments in multiple currencies with real-time exchange rates.",
-      expandedDescription: "Accept and process payments in over 150 currencies with competitive exchange rates. Automatic currency conversion, hedging tools, and multi-currency accounting. Expand your business globally with seamless international payment processing.",
+      title: "Segurança Avançada",
+      description: "Implementamos as melhores práticas de segurança para proteger seu site e dados dos clientes.",
+      expandedDescription: "Utilizamos certificados SSL, criptografia de dados, proteção contra ataques DDoS e malware. Implementamos autenticação de dois fatores, backup automático diário e monitoramento 24/7. Garantimos conformidade com LGPD e outras regulamentações de privacidade.",
       icon: (
         <Star size={24} className="text-cosmic-accent" />
       )
     },
     {
-      title: "API Integration",
-      description: "Powerful APIs for seamless integration with your existing financial systems.",
-      expandedDescription: "Connect with your ERP, accounting software, and banking systems through our comprehensive APIs. Real-time webhooks, detailed documentation, and SDKs for popular programming languages. Build custom integrations that fit your unique business needs.",
+      title: "Suporte Técnico",
+      description: "Suporte contínuo e manutenção para garantir que seu site esteja sempre funcionando perfeitamente.",
+      expandedDescription: "Oferecemos suporte técnico especializado, atualizações regulares de segurança, monitoramento de performance e backup diário. Nossa equipe está disponível para resolver qualquer problema e implementar melhorias conforme seu negócio evolui.",
       icon: (
         <BookOpen size={24} className="text-cosmic-accent" />
       )
@@ -66,10 +66,10 @@ const Features = () => {
       <div className="max-w-7xl mx-auto space-y-12">
         <div className="text-center space-y-3 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-medium tracking-tighter">
-            Everything your business needs
+            Tudo que seu negócio precisa
           </h2>
           <p className="text-cosmic-muted text-lg">
-            Comprehensive fintech solutions to streamline your financial operations and drive growth
+            Recursos completos para criar uma presença digital forte e gerar resultados reais
           </p>
         </div>
         
@@ -100,7 +100,7 @@ const Features = () => {
                   <p className="text-cosmic-muted">{feature.expandedDescription}</p>
                   <div className="mt-4 flex justify-end">
                     <button className="text-cosmic-accent hover:text-cosmic-accent/80 text-sm font-medium">
-                      Learn more →
+                      Saiba mais →
                     </button>
                   </div>
                 </div>
