@@ -29,30 +29,30 @@ const HeroSection = () => {
         <div className="flex justify-center">
           <span className="inline-flex items-center gap-2 px-3 py-1 text-xs font-medium rounded-full bg-muted text-primary">
             <span className="flex h-2 w-2 rounded-full bg-primary"></span>
-            Launching new payment features
+            Lançando novas funcionalidades de pagamento
             <Loader className="h-3 w-3 animate-spin text-primary" />
           </span>
         </div>
         
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-medium tracking-tighter text-balance text-foreground">
-          Financial operations for <span className="text-primary">growth</span> businesses
+          Operações financeiras para empresas em <span className="text-primary">crescimento</span>
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
-          Streamline your financial workflows with our comprehensive fintech platform. Built for modern businesses who value efficiency, compliance, and scalable growth.
+          Otimize seus fluxos de trabalho financeiros com nossa plataforma fintech abrangente. Desenvolvida para empresas modernas que valorizam eficiência, conformidade e crescimento escalável.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6 items-center">
           <Button className="bg-primary text-primary-foreground hover:bg-primary/80 hover:text-primary-foreground text-base h-12 px-8 transition-all duration-200 min-h-[48px]">
-            Start for free
+            Começar grátis
           </Button>
           <Button variant="outline" className="border-border text-foreground hover:bg-accent hover:text-accent-foreground text-base h-12 px-8 transition-all duration-200 min-h-[48px]">
-            Book a demo
+            Agendar demonstração
           </Button>
         </div>
         
         <div className="pt-6 text-sm text-muted-foreground">
-          No credit card required • Free 14-day trial
+          Sem cartão de crédito • Teste grátis por 14 dias
         </div>
       </div>
       
